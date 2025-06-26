@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StarCoconut | Home</title>
+    <link rel="shortcut icon" href="IMG/Icon.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-White shadow-sm">
+      <div class="container">
+        <a class="navbar-brand fw-bold text-success" href="#"><img src="IMG/Logo-H-B.png" alt="" width="150px"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item nav-c"><a class="nav-link" href="#pricing">Plans</a></li>
+            <li class="nav-item nav-c"><a class="nav-link" href="#benefits">Benefits</a></li>
+            <li class="nav-item nav-c"><a class="nav-link" href="#vision">Vision</a></li>
+            <li class="nav-item nav-c"><a class="nav-link" href="#about">About</a></li>
+            <li class="nav-item nav-c"><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section with 3D Background -->
+    <section class="hero-section" id="home">
+      <div class="container hero-content">
+        <h1 class="display-4 fw-bold">Farm Fresh Green Tender Coconut At Your DoorStep</h1>
+        <p class="lead mb-4">Stay hydrated and healthy with weekly or monthly coconut subscriptions.</p>
+        <button class="btn btn-success btn-lg" onclick="document.getElementById('pricing').scrollIntoView({behavior:'smooth'})">
+            Subscribe Now
+        </button>
+      </div>
+    </section>
+
+<!-- Pricing Plans -->
+<section class="py-5" id="pricing">
+  <div class="container">
+    <h2 class="text-center mb-5 fw-bold text-success">Choose Your Plan</h2>
+    <div class="row g-4 justify-content-center">
+
+      <!-- Single Pack -->
+      <div class="col-md-5 col-lg-3">
+        <div class="pricing-card p-4 text-center">
+          <h3 class="fw-bold text-success">1 Pack Coconuts</h3>
+          <p class="display-6 fw-bold mb-3" style="font-size: xx-large;">₹500</p>
+          <ul class="list-unstyled mb-4">
+            <li>10 fresh coconuts</li>
+            <li>Free home delivery</li>
+            <li>One-time order</li>
+          </ul>
+          <button class="btn btn-outline-success" onclick="openWhatsApp('1 Pack Order')">
+            Contact Us
+          </button>
+        </div>
+      </div>
+
+      <!-- Weekly Plan -->
+      <div class="col-md-5 col-lg-3">
+        <div class="pricing-card p-4 text-center">
+          <h3 class="fw-bold text-success">Weekly Plan</h3>
+          <p class="display-6 fw-bold mb-3" style="font-size: xx-large;">₹500 / week</p>
+          <ul class="list-unstyled mb-4">
+            <li>11 fresh coconuts <b>(10 + 1 Free)</b></li>
+            <li>Delivered every week</li>
+            <li>Free home delivery</li>
+            <li>Pause/skip anytime</li>
+          </ul>
+          <button class="btn btn-outline-success" onclick="openWhatsApp('Weekly Plan')">
+            Contact Us
+          </button>
+        </div>
+      </div>
+
+      <!-- Monthly Plan -->
+      <div class="col-md-5 col-lg-3">
+        <div class="pricing-card p-4 text-center">
+          <h3 class="fw-bold text-success">Monthly Plan</h3>
+          <p class="display-6 fw-bold mb-3" style="font-size: xx-large;">₹1999 / month</p>
+          <ul class="list-unstyled mb-4">
+            <li>44 fresh coconuts <b>(40 + 4 Free)</b></li>
+            <li>Delivered weekly or as needed</li>
+            <li>Free home delivery</li>
+            <li>Priority support</li>
+            <li>Pause/skip anytime</li>
+          </ul>
+          <button class="btn btn-outline-success" onclick="openWhatsApp('Monthly Plan')">
+            Contact Us
+          </button>
+        </div>
+      </div>
+
+      <!-- Custom Plan -->
+      <div class="col-md-5 col-lg-3">
+        <div class="pricing-card p-4 text-center">
+          <h3 class="fw-bold text-success">Custom Plan</h3>
+          <p class="display-6 fw-bold mb-3">Flexible</p>
+          <ul class="list-unstyled mb-4">
+            <li>Choose quantity & delivery days</li>
+            <li>Best for offices, events, families</li>
+            <li>Free home delivery</li>
+            <li>Special pricing for bulk orders</li>
+          </ul>
+          <button class="btn btn-outline-success " onclick="openWhatsApp('Custom Plan')">
+            Build Your Plan
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+    <!-- Benefits Section -->
+    <section class="benefits-section py-5" id="benefits">
+        <div class="container">
+          <h2 class="text-center mb-4 fw-bold text-success">Why Choose Green Tender Coconut?</h2>
+          <div class="row g-4">
+  <div class="col-md-4 col-lg-2">
+    <div class="card border-0 h-100">
+      <div class="card-body text-center">
+        <img src="https://img.icons8.com/color/96/000000/coconut.png" alt="Natural" class="mb-3" style="width:56px;">
+        <h5 class="card-title">100% Natural & Fresh</h5>
+        <p class="card-text">Direct from the farm, no preservatives or additives.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4 col-lg-2">
+    <div class="card border-0 h-100">
+      <div class="card-body text-center">
+        <img src="https://img.icons8.com/color/96/000000/water.png" alt="Hydration" class="mb-3" style="width:56px;">
+        <h5 class="card-title">Ultimate Hydration</h5>
+        <p class="card-text">Rich in electrolytes, perfect for daily hydration and energy.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4 col-lg-2">
+    <div class="card border-0 h-100">
+      <div class="card-body text-center">
+        <img src="https://img.icons8.com/color/96/000000/leaf.png" alt="Eco Friendly" class="mb-3" style="width:56px;">
+        <h5 class="card-title">Eco-Friendly & Healthy</h5>
+        <p class="card-text">Sustainable farming and delivery practices for a better planet.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4 col-lg-2">
+    <div class="card border-0 h-100">
+      <div class="card-body text-center">
+        <img src="https://img.icons8.com/color/96/000000/heart-with-pulse.png" alt="Immunity" class="mb-3" style="width:56px;">
+        <h5 class="card-title">Boosts Immunity</h5>
+        <p class="card-text">Loaded with vitamins and minerals that strengthen your immune system.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4 col-lg-2">
+    <div class="card border-0 h-100">
+      <div class="card-body text-center">
+        <img src="https://img.icons8.com/color/96/000000/weight.png" alt="Weight Loss" class="mb-3" style="width:56px;">
+        <h5 class="card-title">Supports Weight Loss</h5>
+        <p class="card-text">Low in calories and helps in maintaining a healthy weight.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4 col-lg-2">
+    <div class="card border-0 h-100">
+      <div class="card-body text-center">
+        <img src="https://img.icons8.com/color/96/000000/plant-under-sun.png" alt="Skin Health" class="mb-3" style="width:56px;">
+        <h5 class="card-title">Enhances Skin Health</h5>
+        <p class="card-text">Keeps your skin hydrated and glowing naturally.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+        </div>
+      </section>
+
+    <!-- Vision Section -->
+     <section class="py-5" id="vision" style="background: linear-gradient(135deg, #e0ffe8 0%, #f0fff4 100%);">
+  <div class="container">
+    <div class="row justify-content-center align-items-center">
+      <div class="col-lg-6 mb-4 mb-lg-0">
+        <img src="IMG/meimei-ismail-NvCJe-1ijTg-unsplash.jpg"
+     alt="Coconut Trees" class="img-fluid rounded shadow-lg border border-success" style="max-height:320px; object-fit:cover;">
+
+
+      </div>
+      <div class="col-lg-6">
+        <div class="p-4 bg-white rounded shadow" style="border-left: 5px solid #43e97b;">
+          <h2 class="fw-bold text-success mb-3 text-center text-lg-start">
+            <i class="bi bi-eye-fill me-2"></i>Our Vision
+          </h2>
+          <p class="fs-5 mb-0 text-center text-lg-start">
+            Our vision is to promote a healthier lifestyle and sustainable living by making fresh, natural green tender coconut water accessible to every household.<br><br>
+            We are committed to supporting local farmers, reducing plastic waste through eco-friendly packaging, and educating our community about the benefits of natural hydration.<br><br>
+            <span class="fw-bold text-success">Together, we aim to create a greener, healthier future for all.</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+ <!-- About Us -->
+
+      <section class="py-5" id="about" style="background: linear-gradient(120deg, #f0fff4 0%, #e0ffe8 100%);">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-6 mb-4 mb-lg-0">
+        <img src="IMG/olena-derebera-axBMqWQMo_Q-unsplash.jpg"
+             alt="Coconut Trees Hyderabad" class="img-fluid rounded shadow border border-success" style="max-height:350px; object-fit:cover;">
+      </div>
+      <div class="col-lg-6">
+        <div class="p-4 bg-white rounded shadow" style="border-left: 5px solid #43e97b;">
+          <h2 class="fw-bold text-success mb-3">
+            <i class="bi bi-info-circle-fill me-2"></i>About Star Coconut
+          </h2>
+          <p class="fs-5 mb-3">
+            <span class="fw-bold text-success">Star Coconut</span> is Hyderabad’s trusted name for farm-fresh tender coconuts, serving the city with pride and passion for over <span class="fw-bold">25 years</span>. Established in the heart of <span class="fw-bold">Sun City, Hyderabad, Telangana</span>, our roots run deep in the local soil, and our commitment to quality is unwavering.
+          </p>
+          <p class="fs-6 mb-3">
+            Since our inception, we have dedicated ourselves to delivering only the freshest and most natural tender coconuts directly from the farm to your doorstep. Our coconuts are carefully sourced and handpicked every day to ensure you enjoy the purest taste and maximum health benefits with every sip.
+          </p>
+          <p class="fs-6 mb-3">
+            With a legacy built on trust, consistency, and customer satisfaction, Star Coconut has become a household name across Hyderabad. Our journey from a humble local business in Sun City to a beloved citywide brand is a testament to our values and the loyalty of our customers.
+          </p>
+          <p class="fs-6 mb-0">
+            Whether you’re seeking daily hydration, a healthy lifestyle, or the nostalgic taste of fresh coconut water, <span class="fw-bold text-success">Star Coconut</span> is here to serve you—just as we have for generations.
+          </p>
+          <div class="mt-4">
+            <span class="badge bg-success fs-6 me-2">25+ Years of Trust</span>
+            <span class="badge bg-light text-success border border-success fs-6 me-2">Farm Fresh</span>
+            <span class="badge bg-success fs-6">Hyderabad’s Own</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    <!-- Contact Section -->
+    <section class="py-5 bg-light" id="contact">
+      <div class="container">
+        <h2 class="text-center mb-4 fw-bold text-success">Contact & Subscription</h2>
+        <div class="row justify-content-center">
+          <div class="col-md-6">
+            <div class="card shadow-sm">
+              <div class="card-body text-center">
+                <p class="mb-3">Have questions or want to subscribe? Reach us on WhatsApp!</p>
+                <a href="https://wa.me/917032543872?text=Hi!%20I%20am%20interested%20in%20your%20coconut%20subscription." 
+                   class="btn btn-success btn-lg mb-2" target="_blank">
+                  <img src="https://img.icons8.com/color/48/000000/whatsapp.png" alt="WhatsApp" style="width:28px; vertical-align:middle;">
+                  Chat on WhatsApp
+                </a>
+                <p class="mb-0 mt-3">Or call us: <strong class="text-success">+91 70325 43872</strong></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <small>&copy; 2025 Star Coconuts. All rights reserved.</small>
+      </div>
+    </footer>
+
+    <!-- WhatsApp JS Function -->
+    <script>
+      function openWhatsApp(plan) {
+        var phone = "917032543872"; // Replace with your WhatsApp number
+        var msg = encodeURIComponent("Hi! I'm interested in the " + plan + " for fresh coconut delivery.");
+        window.open("https://wa.me/" + phone + "?text=" + msg, "_blank");
+      }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
